@@ -38,26 +38,40 @@ export default function Home() {
           </div>
         </nav>
 
-        <section className="pb-14 pt-10 md:pt-16">
-          <p className="mb-4 text-xs uppercase tracking-[0.25em] text-[#8ea3d3]">Scroll to explore</p>
-          <h1 className="max-w-5xl text-5xl font-black leading-[0.95] tracking-tight md:text-8xl">
-            Starcraft for
-            <br />
-            memory-driven
-            <br />
-            AI execution.
-          </h1>
-          <p className="mt-6 max-w-2xl text-base leading-relaxed text-[#aebcdc] md:text-lg">
-            ExoMind is a tactical context runtime. It helps one operator orchestrate many AI tasks without losing state,
-            direction, or signal quality.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <a href="https://github.com/zhugez/ExoMind" target="_blank" rel="noreferrer" className="rounded-xl bg-gradient-to-r from-[#7ca3ff] to-[#9fc4ff] px-5 py-2.5 font-semibold text-[#061025] transition hover:-translate-y-0.5">
-              Deploy ExoMind
-            </a>
-            <a href="https://exomind-zhugez.vercel.app" className="rounded-xl border border-[#87abff4f] px-5 py-2.5 font-semibold text-[#dce6ff] transition hover:-translate-y-0.5 hover:border-[#acc5ff]">
-              Live Demo
-            </a>
+        <section className="grid items-center gap-8 pb-14 pt-10 md:grid-cols-[1.1fr_.9fr] md:pt-16">
+          <div>
+            <p className="mb-4 text-xs uppercase tracking-[0.25em] text-[#8ea3d3]">Scroll to explore</p>
+            <h1 className="max-w-5xl text-5xl font-black leading-[0.95] tracking-tight md:text-8xl">
+              Starcraft for
+              <br />
+              memory-driven
+              <br />
+              AI execution.
+            </h1>
+            <p className="mt-6 max-w-2xl text-base leading-relaxed text-[#aebcdc] md:text-lg">
+              ExoMind is a tactical context runtime. It helps one operator orchestrate many AI tasks without losing state,
+              direction, or signal quality.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a href="https://github.com/zhugez/ExoMind" target="_blank" rel="noreferrer" className="rounded-xl bg-gradient-to-r from-[#7ca3ff] to-[#9fc4ff] px-5 py-2.5 font-semibold text-[#061025] transition hover:-translate-y-0.5">
+                Deploy ExoMind
+              </a>
+              <a href="https://exomind-zhugez.vercel.app" className="rounded-xl border border-[#87abff4f] px-5 py-2.5 font-semibold text-[#dce6ff] transition hover:-translate-y-0.5 hover:border-[#acc5ff]">
+                Live Demo
+              </a>
+            </div>
+          </div>
+
+          <div className="scene-wrap">
+            <div className="scene">
+              <div className="grid-plane" />
+              <div className="cube c1" />
+              <div className="cube c2" />
+              <div className="cube c3" />
+              <div className="radar-ring r1" />
+              <div className="radar-ring r2" />
+              <div className="hud">EXOMIND COMMAND MAP</div>
+            </div>
           </div>
         </section>
 
